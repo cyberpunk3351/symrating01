@@ -1,0 +1,5 @@
+{% for apps in app %}
+    <h4>Title: {{ apps.title }}</h4>
+        <p>Rating: {{ apps.rating }}</p>
+        <p>Dare: {{ apps.date|date("F jS \\a\\t g:ia")  }}</p>
+{% endfor %}
